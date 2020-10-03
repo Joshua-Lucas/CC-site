@@ -26,6 +26,11 @@ const GlobalStyle = createGlobalStyle`
         src: url('/fonts/Raleway-VariableFont_wght.ttf') format("truetype");
     }
 
+    @font-face {
+        font-family: 'Lato';
+        src: url('/fonts/Lato-Regular.ttf') format("truetype");
+    }
+
    html {
         font-size: 16px;
         box-sizing: border-box;
@@ -39,6 +44,10 @@ const GlobalStyle = createGlobalStyle`
         color: ${Theme.colors.secondary};
         font-family:  'Raleway';
         
+    }
+
+    h1 {
+        font-family:'Lato';
     }
 `
 
