@@ -6,13 +6,13 @@ import Link from 'next/link'
 //Styled Components
 const TextContiner = styled.div`
   width: 100%;
-  padding: 0 0.5rem;
+  padding: 2rem 0.5rem 0;
   color: ${({ theme }) => theme.colors.primary};
 `
 
 const Title = styled.h1`
   margin: 0;
-  font-family: Prompt;
+  font-family: Lato;
   text-transform: capitalize;
   @media (min-width: 786px) {
     font-size: 4rem;

@@ -37,9 +37,10 @@ const NavButton = styled.button`
 
 const Logo = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
+  font-family: 'Lato';
 `
 const LogoSpan = styled.span`
-  font-weight: 200;
+  font-weight: 100;
 `
 //INTERFACES
 interface ILogoContainer {

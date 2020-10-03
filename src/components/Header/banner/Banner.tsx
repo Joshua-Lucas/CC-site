@@ -5,7 +5,8 @@ import BannerText from './BannerText'
 
 const BannerWrapper = styled.div`
   width: 100%;
-  height: 60vh;
+  height: 55vh;
+  z-index: 10;
   background: ${({ theme }) => theme.colors.secondary};
 `
 
@@ -26,7 +27,7 @@ const BannerContainer = styled.div`
 
 const BannerImage = styled.img`
   width: 100%;
-
+  z-index: 10;
   @media (min-width: 786px) {
     width: 70%;
   }
@@ -34,6 +35,14 @@ const BannerImage = styled.img`
     max-width: ${rem('690px')};
     align-self: flex-start;
     /* margin-left: 4rem; */
+  }
+`
+
+const SvgAccent = styled.svg`
+  display: none;
+  @media (min-width: 786px) {
+    display: block;
+    fill: ${({ theme }) => theme.colors.secondary};
   }
 `
 
@@ -47,6 +56,9 @@ const Banner: React.FC = () => {
           <BannerImage src={image} alt="me" />
           <BannerText />
         </BannerContainer>
+        <SvgAccent viewBox="0 0 450 55">
+          <polygon points="0,0 0,55 450,0" />
+        </SvgAccent>
       </BannerWrapper>
     </>
   )

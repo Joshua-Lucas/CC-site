@@ -18,7 +18,7 @@ const Navigation = () => {
   return (
     <ComponentContainer>
       <LogoContainer activateNav={setToggleNav} toggle={toggleNav} />
-      <Nav toggleNav={toggleNav} navLinks={['Home']} />
+      <Nav toggleNav={toggleNav} navLinks={['Home', 'Blog']} />
     </ComponentContainer>
   )
 }
