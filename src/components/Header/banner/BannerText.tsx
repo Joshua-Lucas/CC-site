@@ -6,25 +6,14 @@ import Link from 'next/link'
 //Styled Components
 const TextContiner = styled.div`
   width: 100%;
-  margin-top: ${rem('-125px')};
   padding: 0 0.5rem;
   color: ${({ theme }) => theme.colors.primary};
-  @media (min-width: 786px) {
-    margin-top: 0;
-  }
-`
-
-const PreTitle = styled.h4`
-  margin: 0.15rem 0;
-  font-weight: 300;
-  @media (min-width: 786px) {
-    font-size: 2rem;
-  }
 `
 
 const Title = styled.h1`
   margin: 0;
   font-family: Prompt;
+  text-transform: capitalize;
   @media (min-width: 786px) {
     font-size: 4rem;
   }
@@ -59,15 +48,14 @@ const BannerText: React.FC = () => {
   return (
     <>
       <TextContiner>
-        <PreTitle>A Louisville Based</PreTitle>
-        <Title>Full-Stack Developer</Title>
+        <Title>Helping you drive growth through transformaton</Title>
         <SubTitle>
-          Creating intuitive and responsive software with people in mind
+          Consulting, Coaching, Digiatl Advancment and Traning
         </SubTitle>
         <LinkContainer>
           <Link href="/#">
             <NavLink>
-              Connect with me <span> {'->'} </span>
+              Unlock Growth <span> {'->'} </span>
             </NavLink>
           </Link>
         </LinkContainer>

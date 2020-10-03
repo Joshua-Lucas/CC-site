@@ -5,7 +5,7 @@ import BannerText from './BannerText'
 
 const BannerWrapper = styled.div`
   width: 100%;
-  height: 80vh;
+  height: 60vh;
   background: ${({ theme }) => theme.colors.secondary};
 `
 
@@ -15,30 +15,31 @@ const BannerContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   @media (min-width: 786px) {
     height: 100%;
     max-width: 70%;
     margin: auto;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
   }
 `
 
 const BannerImage = styled.img`
   width: 100%;
+
   @media (min-width: 786px) {
-    height: 100%;
+    width: 70%;
   }
-  @media (min-width: 1250px) {
+  @media (min-width: 1024px) {
     max-width: ${rem('690px')};
+    align-self: flex-start;
     /* margin-left: 4rem; */
   }
 `
 
 const Banner: React.FC = () => {
   const image =
-    'https://res.cloudinary.com/jlucompany/image/upload/v1600372226/Portfolio/Porfolio-2.0/me2_kwilna.png'
+    'https://res.cloudinary.com/jlucompany/image/upload/v1601748775/CordleConsulting/Bronson_Cordle_xxgiuy.jpg'
   return (
     <>
       <BannerWrapper>
