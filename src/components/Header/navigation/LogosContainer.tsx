@@ -38,6 +38,9 @@ const NavButton = styled.button`
 const Logo = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
 `
+const LogoSpan = styled.span`
+  font-weight: 200;
+`
 //INTERFACES
 interface ILogoContainer {
   activateNav: React.Dispatch<React.SetStateAction<boolean>>
@@ -48,7 +51,9 @@ interface ILogoContainer {
 const LogoContainer: React.FC<ILogoContainer> = ({ activateNav, toggle }) => {
   return (
     <LogoWrapper>
-      <Logo>JoshuaLucas</Logo>
+      <Logo>
+        Cordle<LogoSpan>Consulting</LogoSpan>
+      </Logo>
       <NavButton
         aria-label="Navigation Toggle Dropdown"
         onClick={() => activateNav(!toggle)}
