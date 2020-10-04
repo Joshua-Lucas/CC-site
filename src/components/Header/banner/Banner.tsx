@@ -38,14 +38,6 @@ const BannerImage = styled.img`
   }
 `
 
-const SvgAccent = styled.svg`
-  display: none;
-  @media (min-width: 786px) {
-    display: block;
-    fill: ${({ theme }) => theme.colors.secondary};
-  }
-`
-
 const Banner: React.FC = () => {
   const image =
     'https://res.cloudinary.com/jlucompany/image/upload/v1601748775/CordleConsulting/Bronson_Cordle_xxgiuy.jpg'
@@ -56,9 +48,6 @@ const Banner: React.FC = () => {
           <BannerImage src={image} alt="me" />
           <BannerText />
         </BannerContainer>
-        <SvgAccent viewBox="0 0 450 55">
-          <polygon points="0,0 0,55 450,0" />
-        </SvgAccent>
       </BannerWrapper>
     </>
   )
