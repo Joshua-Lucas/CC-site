@@ -48,6 +48,7 @@ const GlobalStyle = createGlobalStyle`
 
     h1 {
         font-family:'Lato';
+        margin: 0;
     }
 `
 
