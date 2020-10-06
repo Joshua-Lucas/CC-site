@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactSVGElement, SVGAttributes } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
 
@@ -9,7 +9,7 @@ const ProductWrapper = styled.div`
 `
 //Interfaces
 interface IProductProps {
-  svg: React.FunctionComponent
+  svg: SVGAttributes<ReactSVGElement>
   title: string
   description: string
   link: boolean
