@@ -1,31 +1,34 @@
 import React from 'react'
-
+import styled from 'styled-components'
 import Link from 'next/link'
 
 //Styled Components
-
+const ProductWrapper = styled.div`
+  border: solid 2px ${({ theme }) => theme.colors.primary};
+  margin: 2rem;
+`
 //Interfaces
 interface IProductProps {
+  svg: React.FunctionComponent
   title: string
   description: string
   link: boolean
-  linkhref: string
-  linkText: string
 }
 //React Component
 const Product: React.FC<IProductProps> = ({
+  svg,
   title,
   description,
   link,
-  linkhref,
-  linkText,
 }) => {
   return (
     <>
-      <p>svg here</p>
-      <h3>{title}</h3>
-      <p>{description}</p>
-      {!link == null ? <Link href={`/${linkhref}`}>{linkText}</Link> : null}
+      <ProductWrapper>
+        {svg}
+        <h3>{title}</h3>
+        <p>{description}</p>
+        {link ? <Link href={`/${title}`}>See more</Link> : null}
+      </ProductWrapper>
     </>
   )
 }
