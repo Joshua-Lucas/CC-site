@@ -1,13 +1,13 @@
 import React from 'react'
 import About from './about/About'
-import Products from './about/Products'
+import Services from './about/Services'
 
 const Main: React.FC = () => {
   return (
     <>
       <main>
         <About />
-        <Products />
+        <Services />
       </main>
     </>
   )

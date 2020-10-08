@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const SVGElement = styled.svg`
-  width: 250px;
+  width: 150px;
 `
 
 const Digital: React.FC = () => {

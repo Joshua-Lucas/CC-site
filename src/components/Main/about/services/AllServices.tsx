@@ -1,21 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
-import Product from './Product'
+import Service from './Service'
+//svgs
 import Buisness from './svg/buisness'
-
 import Digital from './svg/digital'
 import Operations from './svg/operations'
 import People from './svg/people'
 
-//Styled Components
-const ProductWrapper = styled.section`
-  background-color: ${({ theme }) => theme.colors.alternative};
-  color: ${({ theme }) => theme.colors.primary};
+//Styled-Components
+const ServicesWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
 `
-//Interfaces
 
-//React Component
-const Products: React.FC = () => {
+const AllServices = () => {
   const Services = [
     {
       svg: <Buisness />,
@@ -46,7 +44,7 @@ const Products: React.FC = () => {
 
   const allProducts = Services.map((service) => {
     return (
-      <Product
+      <Service
         key={service.title}
         svg={service.svg}
         title={service.title}
@@ -58,11 +56,9 @@ const Products: React.FC = () => {
 
   return (
     <>
-      <ProductWrapper>
-        <h1>How can we help?</h1>
-        {allProducts}
-      </ProductWrapper>
+      <ServicesWrapper>{allProducts}</ServicesWrapper>
     </>
   )
 }
-export default Products
+
+export default AllServices
