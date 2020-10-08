@@ -3,8 +3,7 @@ import styled from 'styled-components'
 
 //Styled Components
 const AboutContainer = styled.div`
-  margin: 0 0.75rem;
-  margin-top: 3rem;
+  margin: 3rem 0.75rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +11,8 @@ const AboutContainer = styled.div`
   @media (min-width: 786px) {
     max-width: 70%;
     justify-content: center;
-    align-items: flex-end;
+    margin: 3rem auto;
+    align-items: center;
   }
 `
 const Title = styled.h1`
