@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Main from '../src/components/Main/Main'
-import Layout from '../src/Layout'
+import Layout from '../src/components/Layout'
 
 export default function Home() {
   return (
