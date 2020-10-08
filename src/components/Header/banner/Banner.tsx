@@ -5,9 +5,14 @@ import BannerText from './BannerText'
 
 const BannerWrapper = styled.div`
   width: 100%;
-  height: 55vh;
   z-index: 10;
   background: ${({ theme }) => theme.colors.secondary};
+  @media (min-width: 1024px) {
+    height: 65vh;
+  }
+  @media (min-width: 1280px) {
+    height: 55vh;
+  }
 `
 
 const BannerContainer = styled.div`
