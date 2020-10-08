@@ -11,6 +11,19 @@ import People from './svg/people'
 const ServicesWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  @media (min-width: 786px) {
+    width: 75%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 786px) {
+    width: 75%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media (min-width: 1024px) {
+    width: 60%;
+  }
 `
 
 const AllServices = () => {
