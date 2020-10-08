@@ -4,7 +4,7 @@ const Theme = {
     secondary: '#141414', //rgb(20,20,20)
     alternative: '#292929', // or try 474747
     accent: '#61DAFB', //rgb(97,218,251)
-    secondaryAccent: '#909C81', // rgb(144,156,129) Not sure if i'll keep this color trying to decide which accent to use.
+    neutralAccent: '#888888', // rbg(136,136,136)
     alert: '#C14633', // rgb(193,70,51)
   },
 }
