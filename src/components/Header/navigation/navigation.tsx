@@ -5,9 +5,11 @@ import Nav from './nav'
 
 //Styled Components
 const ComponentContainer = styled.header`
+  padding: 1rem 0;
   @media (min-width: 786px) {
     max-width: 70%;
     margin: auto;
+    padding: 1.75rem 0;
     background-color: ${({ theme }) => theme.colors.secondary};
     display: flex;
   }
